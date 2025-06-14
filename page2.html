@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>عروض السفر</title>
+    <style>
+      body {
+        font-family: 'Tahoma', sans-serif;
+        background: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        direction: rtl;
+        scroll-behavior: smooth;
+      }
+      header {
+        background-color: #0078d7;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        padding: 30px;
+      }
+      .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+      .card-content {
+        padding: 15px;
+      }
+      .card-content h3 {
+        margin: 0 0 10px;
+        color: #333;
+      }
+      .card-content p {
+        color: #666;
+        font-size: 14px;
+      }
+      .price {
+        color: #0078d7;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      footer {
+        background-color: #0078d7;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      footer a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: underline;
+      }
+      .legal {
+        background-color: #fff;
+        padding: 30px;
+        margin: 0;
+        color: #333;
+        font-size: 15px;
+        line-height: 1.8;
+      }
+      .legal h2 {
+        color: #0078d7;
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>عروض السفر المميزة</h1>
+      <p>احجز رحلتك الآن بأفضل الأسعار!</p>
+    </header>
+
+    <section class="container">
+      <!-- بطاقات العروض -->
+      <div class="card">
+        <img src="https://via.placeholder.com/400x180?text=دبي" alt="دبي" />
+        <div class="card-content">
+          <h3>دبي - الإمارات</h3>
+          <p>3 ليالٍ في فندق 5 نجوم مع تذاكر طيران.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/400x180?text=باريس" alt="باريس" />
+        <div class="card-content">
+          <h3>باريس - فرنسا</h3>
+          <p>5 ليالٍ مع جولات سياحية وتذكرة دخول إلى برج إيفل.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/400x180?text=تركيا" alt="تركيا" />
+        <div class="card-content">
+          <h3>اسطنبول - تركيا</h3>
+          <p>4 ليالٍ في فندق 4 نجوم مع الإفطار.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- روابط الشروط والخصوصية -->
+    <footer>
+      <p>
+        &copy; 2025 شركة السفر العالمية. جميع الحقوق محفوظة.
+        <br />
+        <a href="#terms">الشروط والأحكام</a> |
+        <a href="#privacy">سياسة الخصوصية</a>
+      </p>
+    </footer>
+
+    <!-- الشروط والأحكام -->
+    <section class="legal" id="terms">
+      <h2>الشروط والأحكام</h2>
+      <p>
+        يرجى قراءة هذه الشروط بعناية قبل استخدام موقعنا. باستخدامك للموقع، فإنك
+        توافق على الالتزام بالشروط التالية:
+      </p>
+      <ul>
+        <li>الأسعار قابلة للتغيير دون إشعار مسبق.</li>
+        <li>جميع العروض تخضع للتوافر وقت الحجز.</li>
+        <li>يجب تقديم الوثائق المطلوبة للسفر (جواز سفر، تأشيرات... إلخ).</li>
+        <li>أي إلغاء يخضع لرسوم حسب سياسة الحجز.</li>
+      </ul>
+    </section>
+
+    <!-- سياسة الخصوصية -->
+    <section class="legal" id="privacy">
+      <h2>سياسة الخصوصية</h2>
+      <p>
+        نحن نحترم خصوصيتك. باستخدامك لهذا الموقع، فإنك توافق على جمع واستخدام
+        المعلومات كما هو موضح في هذه السياسة.
+      </p>
+      <p>
+        قد نقوم بجمع معلومات شخصية مثل الاسم، البريد الإلكتروني، ورقم الهاتف عند
+        الحجز. نستخدم هذه المعلومات لتحسين تجربتك وخدمتك.
+      </p>
+      <p>
+        لن نقوم بمشاركة بياناتك مع أي طرف ثالث دون موافقتك، باستثناء ما يقتضيه
+        القانون.
+      </p>
+    </section>
+  </body>
+</html>
